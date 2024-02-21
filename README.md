@@ -20,15 +20,15 @@ Fungsi total_price : digunakan untuk menghitung total belanja yang diharus dibay
 
 
 ### 2. Objectives
-Bagaimana customer dapat melakukan transaski? : Programmer perlu membuat class Transaction yang digunakan untuk membuat objek transaksi.
-Bagaimana cara memudahkan customer berbelanja dengan sistem self-service? : Programmer perlu menambahkan fitur belanja seperti tambah barang yang akan dibeli, jumlah barang yang akan dibeli, harga barang menggunakan method add_item().
-Bagaimana jika customer salah memasukkan nama barang yang ingin dibeli tanpa menghapus semua barangnya? : Programmer perlu menggunakan method update_item_name untuk mengubah nama barang yang terjadi kesalahan dalam penginputannya.
-Bagaimana jika customer salah memasukkan jumlah barang yang ingin dibeli tanpa menghapus semua barangnya? : Programmer perlu menggunakan method update_item_qty untuk mengubah jumlah barang yang terjadi kesalahan dalam penginputannya.
-Bagaimana jika customer salah memasukkan harga barang yang ingin dibeli tanpa menghapus semua barangnya? : Programmer perlu menggunakan method update_item_price untuk mengubah harga barang yang terjadi kesalahan dalam penginputannya.
-Bagaimana jika customer ingin menghapus salah satu barang yang batal dibeli? : Programmer perlu menggunakan method delete_item untuk menghapus salah satu barang yang batal dibeli.
-Bagaimana jika customer ingin menghapus semua barang yang dibeli? : Programmer perlu menggunakan method reset_item untuk menghapus semua transaksinya.
-Bagaimana jika customer ingin memeriksa kembali belanjaannya? : Programmer perlu menggunakan method check_order untuk memeriksa kembali transaksinya, apakah terjadi kesalahan input atau tidak.
-Bagaimana jika customer ingin menampilkan total harga belanja? : Programmer perlu menggunakan method total_price untuk menampilkan total keseluruhan yang harus dibayarkan customer.
+*Bagaimana customer dapat melakukan transaski? : Programmer perlu membuat class Transaction yang digunakan untuk membuat objek transaksi.*
+*Bagaimana cara memudahkan customer berbelanja dengan sistem self-service? : Programmer perlu menambahkan fitur belanja seperti tambah barang yang akan dibeli, jumlah barang yang akan dibeli, harga barang menggunakan method add_item().*
+*Bagaimana jika customer salah memasukkan nama barang yang ingin dibeli tanpa menghapus semua barangnya? : Programmer perlu menggunakan method update_item_name untuk mengubah nama barang yang terjadi kesalahan dalam penginputannya.*
+*Bagaimana jika customer salah memasukkan jumlah barang yang ingin dibeli tanpa menghapus semua barangnya? : Programmer perlu menggunakan method update_item_qty untuk mengubah jumlah barang yang terjadi kesalahan dalam penginputannya.*
+*Bagaimana jika customer salah memasukkan harga barang yang ingin dibeli tanpa menghapus semua barangnya? : Programmer perlu menggunakan method update_item_price untuk mengubah harga barang yang terjadi kesalahan dalam penginputannya.*
+*Bagaimana jika customer ingin menghapus salah satu barang yang batal dibeli? : Programmer perlu menggunakan method delete_item untuk menghapus salah satu barang yang batal dibeli.*
+*Bagaimana jika customer ingin menghapus semua barang yang dibeli? : Programmer perlu menggunakan method reset_item untuk menghapus semua transaksinya.*
+*Bagaimana jika customer ingin memeriksa kembali belanjaannya? : Programmer perlu menggunakan method check_order untuk memeriksa kembali transaksinya, apakah terjadi kesalahan input atau tidak.*
+*Bagaimana jika customer ingin menampilkan total harga belanja? : Programmer perlu menggunakan method total_price untuk menampilkan total keseluruhan yang harus dibayarkan customer.*
 
 # Alur Code 
 1. Mulai
