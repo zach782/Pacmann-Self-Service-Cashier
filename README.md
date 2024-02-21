@@ -30,7 +30,7 @@ Bagaimana jika customer ingin menghapus semua barang yang dibeli? : Programmer p
 Bagaimana jika customer ingin memeriksa kembali belanjaannya? : Programmer perlu menggunakan method check_order untuk memeriksa kembali transaksinya, apakah terjadi kesalahan input atau tidak.
 Bagaimana jika customer ingin menampilkan total harga belanja? : Programmer perlu menggunakan method total_price untuk menampilkan total keseluruhan yang harus dibayarkan customer.
 
-# Alur Code atau Flowchart
+# Alur Code 
 1. Mulai
 2. Membuat ID Customer
 3. Memilih Menu:
@@ -54,6 +54,8 @@ Bagaimana jika customer ingin menampilkan total harga belanja? : Programmer perl
 12. Jika pilih menu 9, akan keluar dari menu dan program selesai.
 13. Selesai
 
+# Flowchart
+![Untitled Diagram (2)](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/efb68b1f-1225-4fe3-81dc-89f5e3ef94ae)
 
 
 ```python
