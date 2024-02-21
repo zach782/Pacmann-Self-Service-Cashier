@@ -1,5 +1,5 @@
 import os
-from tabulate import tabulate 
+from tabulate import tabulate
 os.system("clear")
 
 
@@ -15,7 +15,8 @@ class Transaction:
     4. harga sebagai harga per item
     5. total sebagai harga total dari jumlah dikali harga per item
     """
-    def __init__(self, inputNo = None, inputNamaItem = None, inputJumlah = None, inputHarga = None):
+
+    def __init__(self, inputNo=None, inputNamaItem=None, inputJumlah=None, inputHarga=None):
         self.no = inputNo
         self.nama = inputNamaItem
         self.jumlah = inputJumlah
@@ -27,9 +28,10 @@ class Transaction:
     harga item, harga total kedalam list keranjang, harga total didapat dari
     jumlah item dikali harga per item
     """
-    def add_item(self,no, nama, jumlah, harga):
+
+    def add_item(self, no, nama, jumlah, harga):
         harga_total = jumlah * harga
-        tambah = [no,nama, jumlah, harga, harga_total]
+        tambah = [no, nama, jumlah, harga, harga_total]
         self.keranjang.append(tambah)
         self.total += harga_total
         self.total_price()
@@ -38,10 +40,12 @@ class Transaction:
     nama_lama digunakan untuk mengupdate nama item berdasarkan nama item yang ingin diubah
     dan nama_baru akan digunakan untuk nama terbaru pada list keranjang 
     """
+
     def update_item_name(self, nama_lama, nama_baru):
         for indeks, barang in enumerate(self.keranjang):
             if barang[1] == nama_lama:
-                self.keranjang[indeks] = [barang[0], nama_baru, barang[2], barang[3], barang[4]]
+                self.keranjang[indeks] = [barang[0],
+                                          nama_baru, barang[2], barang[3], barang[4]]
 
         print("\nIsi keranjang Setelah Nama Item Diubah:")
         headers = ["No", "Nama Barang", "Jumlah", "Harga/Item", "Harga Total"]
@@ -51,6 +55,7 @@ class Transaction:
     digunakan untuk mengubah jumlah item yang ingin dibeli berdasarkan
     nama item yang ingin diubah jumlahnya
     """
+
     def update_item_qty(self, nama_barang, jumlah_baru):
         for index, barang in enumerate(self.keranjang):
             if barang[1] == nama_barang:
@@ -60,7 +65,7 @@ class Transaction:
                 updated_barang = barang[0], barang[1], jumlah_baru, barang[3], harga_total_baru
                 self.keranjang[index] = updated_barang
                 self.total -= selisih_harga
-            
+
         print("\nIsi keranjang Setelah Jumlah Diubah:")
         headers = ["No", "Nama Barang", "Jumlah", "Harga/Item", "Harga Total"]
         print(tabulate(self.keranjang, headers=headers, tablefmt="grid"))
@@ -70,9 +75,10 @@ class Transaction:
     Fungsi update_item_price memiliki parameter nama_barang, harga_baru 
     digunakan untuk mengubah harga per item yang ingin dibeli berdasarkan
     nama item yang ingin diubah harga per itemnya
-    """    
+    """
+
     def update_item_price(self, nama_barang, harga_baru):
-        for indeks, barang in enumerate(self.keranjang):    
+        for indeks, barang in enumerate(self.keranjang):
             if barang[1] == nama_barang:
                 harga_per_item_baru = harga_baru
                 harga_total_baru = harga_per_item_baru * barang[2]
@@ -88,24 +94,21 @@ class Transaction:
     Fungsi delete_item memiliki parameter nama_item yang akan digunakan
     untuk menghapus item berdasarkan nama item yang ingin dihapus
     """
+
     def delete_item(self, nama_item):
         for barang in self.keranjang:
             if barang[1] == nama_item:
-                self.total -= barang[4]  
+                self.total -= barang[4]
                 self.keranjang.remove(barang)
-                # print("\nIsi keranjang Setelah Item Dihapus:")
-                # headers = ["No", "Nama Barang", "Jumlah", "Harga/Item", "Harga Total"]
-                # print(tabulate(self.keranjang, headers=headers, tablefmt="grid"))
-                # print("Barang dengan nama", nama_item, "telah dihapus dari self.self.keranjang.")
-
                 self.total_price()
     """
     Fungsi reset_transaction digunakan untuk mereset atau menghapus semua
     item yang sudah dimasukan ke list keranjang mulai dari nomor item, nama item, 
     jumlah, harga/item, harga total
     """
+
     def reset_transaction(self):
-        self.keranjang = []  
+        self.keranjang = []
         self.total = 0
         print("")
         print("Transaction telah di-reset. self.self.keranjang kosong.")
@@ -116,18 +119,21 @@ class Transaction:
     Fungsi check_order digunakan untuk mengecek identitas item mulai dari
     nama, jumlah, harga per item
     """
+
     def check_order(self):
         for indeks, barang in enumerate(self.keranjang):
             try:
                 if barang[1] == "":
                     print(f"Nama barang pada item {indeks + 1} belum diinput.")
                 elif not barang[2]:
-                    print(f"Jumlah barang pada item {indeks + 1} belum diinput.")
+                    print(
+                        f"Jumlah barang pada item {indeks + 1} belum diinput.")
                 elif not barang[3]:
-                    print(f"Harga barang pada item {indeks + 1} belum diinput.")
+                    print(
+                        f"Harga barang pada item {indeks + 1} belum diinput.")
                 else:
                     print("Semua data pada item", indeks + 1, "telah diinput.")
-                
+
             except IndexError as e:
                 print(f"Item {indeks + 1} tidak lengkap: {e}")
 
@@ -137,18 +143,19 @@ class Transaction:
     item yang akan dibeli, jika total harga memenuhi ketentuan diskon,
     maka total harga akan dapat potongan diskon
     """
+
     def total_price(self):
         diskon = 0
         total_harga = self.total
 
         if total_harga > 500000:
-            diskon = 0.1 
+            diskon = 0.1
             print(f"\nAnda Mendapat diskon sebesar 10%,")
         elif total_harga > 300000:
-            diskon = 0.08  
+            diskon = 0.08
             print(f"\nAnda Mendapat diskon sebesar 8%,")
         elif total_harga > 200000:
-            diskon = 0.05  
+            diskon = 0.05
             print(f"\nAnda Mendapat diskon sebesar 5%,")
         elif total_harga < 200000:
             print("\nAnda Tidak Mendapat Diskon,")
@@ -169,6 +176,7 @@ class Transaction:
     operasi seperti menambahkan item, memperbarui detail item, 
     menghapus item, memeriksa pesanan, dan menghitung total harga
     """
+
     def menu(self):
         no = 0
         while True:
@@ -192,15 +200,15 @@ class Transaction:
             elif pilih == 2:
                 nama_lama = str(input("masukan nama yang ingin diubah = "))
                 nama_baru = str(input("masukan nama baru = "))
-                self.update_item_name(nama_lama,nama_baru)
+                self.update_item_name(nama_lama, nama_baru)
             elif pilih == 3:
                 nama_barang = str(input("masukan nama yang ingin diubah = "))
                 jumlah_baru = int(input("masukan jumlah baru = "))
-                self.update_item_qty(nama_barang,jumlah_baru)
+                self.update_item_qty(nama_barang, jumlah_baru)
             elif pilih == 4:
                 nama_barang = str(input("masukan nama yang ingin diubah = "))
                 harga_baru = int(input("masukan harga baru = "))
-                self.update_item_price(nama_barang,harga_baru)
+                self.update_item_price(nama_barang, harga_baru)
             elif pilih == 5:
                 nama_barang = str(input("masukan nama yang ingin dihapus = "))
                 self.delete_item(nama_barang)
@@ -215,8 +223,5 @@ class Transaction:
             else:
                 print("Menu tidak tersedia")
 
-
-# reza = Transaction()
-# reza.menu()
 
 print("Program Selesai\n")
