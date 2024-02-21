@@ -31,28 +31,28 @@ Bagaimana jika customer ingin memeriksa kembali belanjaannya? : Programmer perlu
 Bagaimana jika customer ingin menampilkan total harga belanja? : Programmer perlu menggunakan method total_price untuk menampilkan total keseluruhan yang harus dibayarkan customer.
 
 # Alur Code atau Flowchart
-#### 1. Mulai
-#### 2. Membuat ID Customer
-#### 3. Memilih Menu:
-##### 1.) Tambah barang
-##### 2.) Ubah nama barang
-##### 3.) Ubah jumlah barang
-##### 4.) Ubah harga barang
-##### 5.) Hapus barang
-##### 6.) Reset transaksi
-##### 7.) Check Order
-##### 8.) Total harga
-##### 9.) Keluar
-#### 4. Jika pilih Menu 1, mengisi identitas barang dan tampil keranjang belanja
-#### 5. Jika pilih Menu 2, mengubah nama barang dan tampil keranjang belanja setelah nama barang diubah.
-#### 6. Jika pilih Menu 3, mengubah jumlah barang, tampil keranjang belanja setelah jumlah barang diubah dan tampil total belanja yang harus dibayarkan.
-#### 7. Jika pilih Menu 4, mengubah harga barang, tampil keranjang belanja setelah harga barang diubah dan tampil total belanja yang harus dibayarkan.
-#### 8. Jika pilih Menu 5, menghapus nama barang yang ingin di batalkan, tampil keranjang belanja setelah barang dihapus, dan total belanja yang harus dibayarkan.
-#### 9. Jika pilih Menu 6, mereset semua barang, dan tampil isi keranjang kosong.
-#### 10. Jika pilih menu 7, memeriksa kembali transaksi dari barang yang dimasukkan. Jika nama, jumlah, harga barang sudah diinputkan, Akan mendapatkan keterangan bahwa nama, jumlah dan harga telah terinput. Jika belum, keterangannya bahwa nama, jumlah dan harga belum terinput.
-#### 11. Jika pilih menu 8, menghitung semua total harga. jika memenuhi ketentuan diskon, maka tampil total belanja dari potongan diskon. jika tidak memenuhi ketentuan diskon, maka akan tampil total belanja tanpa potongan diskon.
-#### 12. Jika pilih menu 9, akan keluar dari menu dan program selesai.
-#### 13. Selesai
+1. Mulai
+2. Membuat ID Customer
+3. Memilih Menu:
+1.) Tambah barang
+2.) Ubah nama barang
+3.) Ubah jumlah barang
+4.) Ubah harga barang
+5.) Hapus barang
+6.) Reset transaksi
+7.) Check Order
+8.) Total harga
+9.) Keluar
+4. Jika pilih Menu 1, mengisi identitas barang dan tampil keranjang belanja
+5. Jika pilih Menu 2, mengubah nama barang dan tampil keranjang belanja setelah nama barang diubah.
+6. Jika pilih Menu 3, mengubah jumlah barang, tampil keranjang belanja setelah jumlah barang diubah dan tampil total belanja yang harus dibayarkan.
+7. Jika pilih Menu 4, mengubah harga barang, tampil keranjang belanja setelah harga barang diubah dan tampil total belanja yang harus dibayarkan.
+8. Jika pilih Menu 5, menghapus nama barang yang ingin di batalkan, tampil keranjang belanja setelah barang dihapus, dan total belanja yang harus dibayarkan.
+9. Jika pilih Menu 6, mereset semua barang, dan tampil isi keranjang kosong.
+10. Jika pilih menu 7, memeriksa kembali transaksi dari barang yang dimasukkan. Jika nama, jumlah, harga barang sudah diinputkan, Akan mendapatkan keterangan bahwa nama, jumlah dan harga telah terinput. Jika belum, keterangannya bahwa nama, jumlah dan harga belum terinput.
+11. Jika pilih menu 8, menghitung semua total harga. jika memenuhi ketentuan diskon, maka tampil total belanja dari potongan diskon. jika tidak memenuhi ketentuan diskon, maka akan tampil total belanja tanpa potongan diskon.
+12. Jika pilih menu 9, akan keluar dari menu dan program selesai.
+13. Selesai
 
 
 
