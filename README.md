@@ -34,15 +34,15 @@ Bagaimana jika customer ingin menampilkan total harga belanja? : Programmer perl
 1. Mulai
 2. Membuat ID Customer
 3. Memilih Menu:
-1.) Tambah barang
-2.) Ubah nama barang
-3.) Ubah jumlah barang
-4.) Ubah harga barang
-5.) Hapus barang
-6.) Reset transaksi
-7.) Check Order
-8.) Total harga
-9.) Keluar
+##### 1.) Tambah barang
+##### 2.) Ubah nama barang
+##### 3.) Ubah jumlah barang
+##### 4.) Ubah harga barang
+##### 5.) Hapus barang
+##### 6.) Reset transaksi
+##### 7.) Check Order
+##### 8.) Total harga
+##### 9.) Keluar
 4. Jika pilih Menu 1, mengisi identitas barang dan tampil keranjang belanja
 5. Jika pilih Menu 2, mengubah nama barang dan tampil keranjang belanja setelah nama barang diubah.
 6. Jika pilih Menu 3, mengubah jumlah barang, tampil keranjang belanja setelah jumlah barang diubah dan tampil total belanja yang harus dibayarkan.
