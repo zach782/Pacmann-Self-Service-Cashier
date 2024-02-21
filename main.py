@@ -215,4 +215,8 @@ class Transaction:
             else:
                 print("Menu tidak tersedia")
 
+
+# reza = Transaction()
+# reza.menu()
+
 print("Program Selesai\n")
