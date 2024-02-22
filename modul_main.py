@@ -241,5 +241,9 @@ class Transaction:
 
 # trnsct_123 = Transaction()
 # trnsct_123.menu()
-
 # print("Program Selesai\n")
+
+# latar belakang 
+# fungsi
+# flowchart
+# test case
