@@ -57,7 +57,19 @@ Fungsi total_price : digunakan untuk menghitung total belanja yang diharus dibay
 # Flowchart
 ![Untitled Diagram (2)](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/efb68b1f-1225-4fe3-81dc-89f5e3ef94ae)
 
-
-```python
-print("halo")
-```
+# Cara Menggunakan Program
+### 1. Download Semua File Atau Modul Kedalam Direktori Lokal
+### 2. Pada File test_case.ipynb Panggil Modul modul_main.py dan class Transaction
+![1](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/533e0986-c624-425e-8a3b-7dc7ebf515e8)
+### 3. Inisialisasi objek trnsct_123 / sesorang yang ingin melakukan transaksi
+![2](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/8c1cf815-e977-4739-ba3a-1e076179c17f)
+### 4. Untuk menambahkan item, objek trnsct_123 dapat menggunakan fungsi add_item(no_item, nama_item, jumlah_item, harga_per_item)
+![3](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/aaacafd1-93b1-415c-842a-f6d6bfb4ae36)
+### 5. Untuk menhapus item, objek trnsct_123 dapat menggunakan fungsi delete_item(nama_item) berdasarkan nama item yang ingin dihapus
+![4](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/b62e7027-06a1-4a94-baad-6efa3c8f4dfe)
+### 6. Untuk menghapus semua item yang telah masuk ke keranjang, objek trnsct_123 dapat menggunakan fungsi reset_transaction()
+![5](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/b25be28e-9a4c-4c41-81cf-7e8c18a9a37e)
+### 7. Jika ingin melihat semua total harga yang harus dibayarkan, objek trnsct_123 dapat menggunakan fungsi total_price()
+![6](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/a5c43023-9ef1-476e-83ff-7c42e940f441)
+### 8. Jika ingin menginputkan auto atau otomatis, pada file modul_main.py diluar class bisa di inisialisasikan objek trnsct_123 dan gunakan fungsi menu()
+![7](https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/7dc7bd50-4614-4e12-a862-a2d3de550b4d)
