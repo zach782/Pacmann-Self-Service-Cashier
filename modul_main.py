@@ -73,6 +73,7 @@ class Transaction:
                     updated_barang = barang[0], barang[1], jumlah_baru, barang[3], harga_total_baru
                     self.keranjang[index] = updated_barang
                     self.total -= selisih_harga
+                    self.total_price()
         except IndexError as e:
             print(f"Terjadi kesalahan indeks: {e}")
         except TypeError as e:
@@ -95,6 +96,7 @@ class Transaction:
                     selisih_harga = barang[4] - harga_total_baru
                     self.keranjang[indeks] = barang[0], barang[1], barang[2], harga_per_item_baru, harga_total_baru
                     self.total -= selisih_harga
+                    self.total_price()
         except IndexError as e:
             print(f"Terjadi kesalahan indeks: {e}")
         except TypeError as e:
@@ -239,4 +241,5 @@ class Transaction:
 
 # trnsct_123 = Transaction()
 # trnsct_123.menu()
-print("Program Selesai\n")
+
+# print("Program Selesai\n")
