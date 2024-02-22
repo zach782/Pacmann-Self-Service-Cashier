@@ -83,3 +83,14 @@ Untuk membuat sistem kasir yang self-service, Programmer membutuhkan beberapa fu
 * <img width="1230" alt="reset item" src="https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/ea04666d-2b66-4462-92b3-355197fc8509">
 5. Menghitung total belanja yang harus dibayarkan customer
 * <img width="1186" alt="total" src="https://github.com/zach782/Pacmann-Self-Service-Cashier/assets/85173256/f3f09205-dc92-4635-b0e5-f6897be4f9a4">
+
+
+# Kesimpulan
+Andi sebagai pemilik supermarket ingin meningkatkan proses bisnis dengan membuat sistem kasir self-service. Hal ini bertujuan untuk memudahkan pelanggan berbelanja dan memungkinkan pelanggan di luar kota untuk berbelanja di supermarket tersebut. Untuk memenuhi kebutuhan Andi, programmer membuat beberapa fungsi dalam sistem kasir self-service, seperti menambah item menggunakan fungsi add_item, memperbarui detail item menggunakan fungsi update_item, menghapus item menggunakan fungsi delete_item, memeriksa pesanan mengunakan fungsi check_order, menghapus semua transaksi menggunakan fungsi reset_transaction dan menghitung total harga menggunakan fungsi total_price.
+Terdapat alur atau flowchart yang menjelaskan bagaimana pelanggan dapat melakukan transaksi menggunakan sistem kasir self-service. Alur tersebut mencakup langkah-langkah seperti memilih menu, mengisi identitas barang, mengubah detail barang, menghapus barang, dan lainnya. Sehingga dapat disimpulkan bahwa sistem kasir self-service di supermarket Andi akan memungkinkan pelanggan untuk berbelanja dengan lebih efisien dan praktis. 
+
+# Saran Pengembangan
+* Menghubungkan program dengan media penyimpanan Database.
+* Mengembangkan program dengan implemetasi barcode pada pembayaran.
+* Perbaikan lainnya mungkin akan ditemukan oleh beberapa user.
+
