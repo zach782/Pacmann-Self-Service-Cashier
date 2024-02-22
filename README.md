@@ -7,14 +7,14 @@ Harapan Andi, customer yang tidak berada di kota tersebut bisa membeli barang da
 # Requirements atau Objectives
 ### 1. Requirements
 Untuk membuat sistem kasir yang self-service, Programmer membutuhkan beberapa fungsi maupun method dalam pengoperasiannya. Antara lain sebagai berikut:
-Fungsi add_item : digunakan untuk menambahkan item yang ingin dibeli customer.
-Fungsi update_item_name : digunakan untuk memperbarui nama barang yang terdapat kesalahan dalam penginputannya.
-Fungsi update_item_qty : digunakan untuk memperbarui jumlah barang yang terdapat kesalahan dalam penginputannya.
-Fungsi update_item_price : digunakan untuk memperbarui harga barang yang terdapat kesalahan dalam penginputannya.
-Fungsi delete_item merupakan : digunakan untuk menghapus salah satu item yang batal dibeli oleh customer.
-Fungsi reset_transaction : digunakan untuk menghapus semua transaksi.
-Fungsi check_order : digunakan untuk memeriksa orderan yang telah dimasukkan dalam keranjang belanjaan.
-Fungsi total_price : digunakan untuk menghitung total belanja yang diharus dibayarkan oleh customer.
+* Fungsi add_item : digunakan untuk menambahkan item yang ingin dibeli customer.
+* Fungsi update_item_name : digunakan untuk memperbarui nama barang yang terdapat kesalahan dalam penginputannya.
+* Fungsi update_item_qty : digunakan untuk memperbarui jumlah barang yang terdapat kesalahan dalam penginputannya.
+* Fungsi update_item_price : digunakan untuk memperbarui harga barang yang terdapat kesalahan dalam penginputannya.
+* Fungsi delete_item merupakan : digunakan untuk menghapus salah satu item yang batal dibeli oleh customer.
+* Fungsi reset_transaction : digunakan untuk menghapus semua transaksi.
+* Fungsi check_order : digunakan untuk memeriksa orderan yang telah dimasukkan dalam keranjang belanjaan.
+* Fungsi total_price : digunakan untuk menghitung total belanja yang diharus dibayarkan oleh customer.
 
 
 ### 2. Objectives
